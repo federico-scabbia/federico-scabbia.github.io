@@ -1,14 +1,18 @@
----
-title: ""
----
-
 <a id="top"></a>
 
-<div style="display:flex; align-items:flex-start; gap:24px; flex-wrap:wrap; margin-bottom:18px;">
+<div style="display:flex; align-items:center; gap:24px; flex-wrap:wrap; margin-bottom:18px;">
 
-  <img src="/images/foto FEDE.jpg"
-       alt="Federico Scabbia"
-       style="width:170px; height:auto; border-radius:14px; flex-shrink:0;">
+<img src="/images/foto_FEDE.jpg"
+     alt="Federico Scabbia"
+     style="
+       width:35%;
+       max-width:220px;
+       min-width:140px;
+       height:auto;
+       border-radius:14px;
+       flex-shrink:0;
+     ">
+
 
   <div style="min-width:240px; max-width:720px;">
 
@@ -22,7 +26,13 @@ title: ""
       <a href="#teaching" style="padding:8px 12px; border:1px solid #ccc; border-radius:10px; text-decoration:none;">Teaching</a>
     </div>
 
-    I use data in many forms—**satellite imagery**, **large-scale text**, **images**, and **administrative data**—to study **social and economic dynamics**. My work emphasizes **careful data construction** combined with **empirical analysis** to understand how complex processes operate across countries and over time.
+    I use data in many forms—<strong>satellite imagery</strong>, <strong>large-scale text</strong>,
+<strong>images</strong>, and <strong>administrative data</strong>—to study
+<strong>social and economic dynamics</strong>. My work emphasizes
+<strong>careful data construction</strong> combined with
+<strong>empirical analysis</strong> to understand how complex processes operate
+across countries and over time.
+
 
     <div style="margin-top:10px;">
       <strong>References:</strong>
@@ -66,57 +76,34 @@ title: ""
 
 ## Teaching {#teaching}
 
----
-title: "Data Science Thesis Supervision"
-collection: teaching
-type: "Master’s program"
-permalink: /teaching/2024-2025-msc-datascience-thesis
-venue: "Barcelona School of Economics"
-date: 2025-01-01
-location: "Barcelona, Spain"
----
+### Barcelona School of Economics
 
-
+**Data Science Thesis Supervision**  
+*Master’s program* · 2024–2025 · Barcelona  
 I advise students on research design, data construction, empirical methods, and thesis writing, with projects focused on applied machine learning and data analysis.
 
+**Finance Thesis Supervision**  
+*Master’s program* · 2024–2025 · Barcelona  
+I supervise master’s theses in finance, with a focus on forecasting methods, data construction, and data management for financial applications.
 
 ---
-title: "Finance Thesis Supervision"
-collection: teaching
-type: "Master’s program"
-permalink: /teaching/2024-2025-msc-finance-thesis
-venue: "Barcelona School of Economics"
-date: 2025-01-01
-location: "Barcelona, Spain"
----
 
+### IES Abroad Barcelona
 
-I advise students on master’s theses in finance, with a focus on forecasting methods, data construction, and data management for financial applications.
+**Master in International Marketing**  
+*Guest Lecturer* · 2024  
+Delivered two lectures:
+- **Celebrity CEOs**: economic and strategic implications of CEO public visibility, media exposure, and firm outcomes  
+- **Marketing Strategy**: firm positioning, consumer targeting, and strategic communication
 
 ---
-title: "Master in International Marketing"
-collection: teaching
-type: "Guest Lecturer"
-permalink: /teaching/2024-ies-abroad-guest-lectures
-venue: "IES Abroad Barcelona"
-date: 2024-01-01
-location: "Barcelona, Spain"
----
-Guest lecturer at **IES Abroad Barcelona**, delivering two lectures:
-- **Celebrity CEOs**: economic and strategic implications of CEO public visibility, media exposure, and firm outcomes.
-- **Marketing Strategy**: core concepts in firm positioning, consumer targeting, and strategic communication.
 
----
-title: "Business Organisation and Management I"
-collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/business-organisation-management-ta
-venue: "Universitat Pompeu Fabra"
-date: 2024-01-01
-location: "Barcelona, Spain"
----
+### Universitat Pompeu Fabra
 
-Teaching assistant for the undergraduate course. Responsibilities included leading tutorial sessions, assisting with coursework and exams, and providing academic support to students on core topics in organization, management, and firm behavior.
+**Business Organisation and Management I**  
+*Undergraduate course* · Teaching Assistant · 2024  
+Led tutorial sessions, assisted with coursework and exams, and provided academic support on core topics in organization, management, and firm behavior.
 
 
-[↑ Back to top](#top)
+
+
