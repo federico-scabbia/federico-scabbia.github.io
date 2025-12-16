@@ -5,11 +5,13 @@
 <img src="/images/foto_FEDE.jpg"
      alt="Federico Scabbia"
      style="
-       width:clamp(210px, 55vw, 320px);
+       display:block;
+       margin:0 auto 12px auto;
+       width:clamp(240px, 65vw, 380px);
        height:auto;
-       border-radius:14px;
-       flex-shrink:0;
+       border-radius:16px;
      ">
+
 
 
 
@@ -29,7 +31,7 @@
 I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-scale text</strong>, <strong>images</strong>, and <strong>administrative data</strong>—to study <strong>social and economic dynamics</strong>. My research leverages <strong>novel databases</strong> built with cutting-edge data processing techniques, combined with <strong>empirical analysis</strong>, to understand complex processes across countries and over time.
 
     <div style="margin-top:8px;">
-      I'm co-organizer with <a href="https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/funck-andrewhenryaurelio" </a>
+      I'm co-organizer with <a href="https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/funck-andrewhenryaurelio"> </a>
       Andrew Funck of the
       <a href="https://broadleaf-hibiscus-88e.notion.site/Natural-Language-in-Economics-Online-Seminar-7b75731a97c149139ed87d1a92afec8a">
         Natural Language in Economics Workshop
@@ -58,7 +60,6 @@ I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-s
   [[Slides]](https://www.dropbox.com/scl/fi/zp1gnnqq159ucrotjetjv/FS_presentation.pptx?rlkey=kwor4v8p2lj5do8unohr1l2kn&dl=0)
 
 - **Leaders and Ideologies** 
-
   <details>
   <summary><em>Abstract</em></summary>
 
@@ -68,8 +69,6 @@ I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-s
 
 - **Media Bias of Conflict**  
   *with Ricardo Baeza-Yates, Marta Reynal-Querol, Elliot Motte*  
-
-
   <details>
   <summary><em>Abstract</em></summary>
 
