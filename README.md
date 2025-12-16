@@ -2,7 +2,7 @@
 
 <div style="display:flex; align-items:flex-start; gap:24px; flex-wrap:wrap; margin-bottom:18px;">
 
-  <img src="/images/foto_FEDE.jpg"
+  <img src="/images/foto FEDE.jpg"
        alt="Federico Scabbia"
        style="width:170px; height:auto; border-radius:14px; flex-shrink:0;">
 
