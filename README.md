@@ -68,7 +68,7 @@ I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-s
   </details>
 
 - **Media Bias of Conflict**  
-  *with Ricardo Baeza-Yates, Marta Reynal-Querol, Elliot Motte*  
+  *with [[Ricardo Baeza-Yates]](https://www.linkedin.com/in/ricardobaezayates/), Marta Reynal-Querol, [[Elliot Motte]](https://elliot-motte.github.io/)*  
   <details>
   <summary><em>Abstract</em></summary>
 
