@@ -63,7 +63,7 @@ I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-s
   <details>
   <summary><em>Abstract</em></summary>
 
-  This study builds a daily, global media-mention network to measure how local news exposure transmits foreign leaders’ ideas across borders. Using U.S. presidential elections (2005–2024) as quasi-random shocks, two IV approaches isolate the causal effect of Trump coverage on other countries. Greater Trump salience abroad triggers democratic backsliding (lower V-Dem scores, more protest repression, survey shifts toward authoritarianism), reduces climate-policy activity, and leads policymakers to downplay democratic and environmental topics in speeches. The framework will be expanded to all democratically elected leaders and enriched with parliamentary transcripts and harmonized surveys to further unpack cross-border idea diffusion.
+  This study builds a daily, global media-mention network to measure how local news exposure transmits foreign leaders’ ideas across borders. Using close elections (2005–2024) as quasi-random shocks, two IV approaches isolate the causal effect of the election winner coverage on other countries. Greater populist salience abroad triggers democratic backsliding (lower V-Dem scores, more protest repression, survey shifts toward authoritarianism), reduces climate-policy activity, and leads policymakers to downplay democratic and environmental topics in speeches. The framework will be enriched with parliamentary transcripts and harmonized surveys to further unpack cross-border ideas diffusion.
 
   </details>
 
