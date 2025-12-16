@@ -115,4 +115,3 @@ location: "Barcelona, Spain"
 Teaching assistant for the undergraduate course. Responsibilities included leading tutorial sessions, assisting with coursework and exams, and providing academic support to students on core topics in organization, management, and firm behavior.
 
 
-[↑ Back to top](#top)
