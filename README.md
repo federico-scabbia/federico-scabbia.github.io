@@ -26,12 +26,14 @@
       <a href="#teaching" style="padding:8px 12px; border:1px solid #ccc; border-radius:10px; text-decoration:none;">Teaching</a>
     </div>
 
-    I use data in many forms—<strong>satellite imagery</strong>, <strong>large-scale text</strong>,
-<strong>images</strong>, and <strong>administrative data</strong>—to study
-<strong>social and economic dynamics</strong>. My work emphasizes
-<strong>careful data construction</strong> combined with
-<strong>empirical analysis</strong> to understand how complex processes operate
-across countries and over time.
+I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-scale text</strong>, <strong>images</strong>, and <strong>administrative data</strong>—to study <strong>social and economic dynamics</strong>. My research leverages <strong>novel databases</strong> built with cutting-edge data processing techniques, combined with <strong>empirical analysis</strong>, to understand complex processes across countries and over time.
+
+    <div style="margin-top:8px;">
+      I'm co-organizer with <a href="https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/funck-andrewhenryaurelio">Andrew Funck of the
+      <a href="https://broadleaf-hibiscus-88e.notion.site/Natural-Language-in-Economics-Online-Seminar-7b75731a97c149139ed87d1a92afec8a">
+        Natural Language in Economics Workshop
+      </a>
+    </div>
 
 
     <div style="margin-top:10px;">
@@ -42,12 +44,7 @@ across countries and over time.
       <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=1060330">Marco Tabellini</a>.
     </div>
 
-    <div style="margin-top:8px;">
-      I'm co-organizer of the
-      <a href="https://broadleaf-hibiscus-88e.notion.site/Natural-Language-in-Economics-Online-Seminar-7b75731a97c149139ed87d1a92afec8a">
-        Natural Language in Economics Workshop
-      </a>
-    </div>
+
 
   </div>
 </div>
@@ -63,13 +60,24 @@ across countries and over time.
 - **Leaders and Ideologies**  
   *Working paper*  
 
+  <details>
+  <summary><em>Abstract</em></summary>
+
   This study builds a daily, global media-mention network to measure how local news exposure transmits foreign leaders’ ideas across borders. Using U.S. presidential elections (2005–2024) as quasi-random shocks, two IV approaches isolate the causal effect of Trump coverage on other countries. Greater Trump salience abroad triggers democratic backsliding (lower V-Dem scores, more protest repression, survey shifts toward authoritarianism), reduces climate-policy activity, and leads policymakers to downplay democratic and environmental topics in speeches. The framework will be expanded to all democratically elected leaders and enriched with parliamentary transcripts and harmonized surveys to further unpack cross-border idea diffusion.
+
+  </details>
 
 - **Media Bias of Conflict**  
   *with Ricardo Baeza-Yates, Marta Reynal-Querol, Elliot Motte*  
   *Working paper*  
 
-  Short abstract: Analyzing 10 million news articles with LLMs, we map the anatomy of global conflict coverage, examining how international ties drive bias and shape downstream economic outcomes.
+  <details>
+  <summary><em>Abstract</em></summary>
+
+  Analyzing 10 million news articles with LLMs, we map the anatomy of global conflict coverage, examining how international ties drive bias and shape downstream economic outcomes.
+
+  </details>
+
 
 
 
