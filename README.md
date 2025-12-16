@@ -29,7 +29,8 @@
 I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-scale text</strong>, <strong>images</strong>, and <strong>administrative data</strong>—to study <strong>social and economic dynamics</strong>. My research leverages <strong>novel databases</strong> built with cutting-edge data processing techniques, combined with <strong>empirical analysis</strong>, to understand complex processes across countries and over time.
 
     <div style="margin-top:8px;">
-      I'm co-organizer with <a href="https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/funck-andrewhenryaurelio">Andrew Funck of the
+      I'm co-organizer with <a href="https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/funck-andrewhenryaurelio" </a>
+      Andrew Funck of the
       <a href="https://broadleaf-hibiscus-88e.notion.site/Natural-Language-in-Economics-Online-Seminar-7b75731a97c149139ed87d1a92afec8a">
         Natural Language in Economics Workshop
       </a>
