@@ -1,30 +1,44 @@
 <a id="top"></a>
 
-<img src="/images/profile.jpg" alt="Federico Scabbia" style="max-width:180px; height:auto; border-radius:12px;">
+<div style="display:flex; align-items:flex-start; gap:24px; flex-wrap:wrap; margin-bottom:18px;">
 
-<div style="margin-top:12px; margin-bottom:20px; display:flex; gap:10px; flex-wrap:wrap;">
-  <a href="#working-papers" style="padding:8px 12px; border:1px solid #ccc; border-radius:10px; text-decoration:none;">Working papers</a>
-  <a href="#cv" style="padding:8px 12px; border:1px solid #ccc; border-radius:10px; text-decoration:none;">CV</a>
-  <a href="#teaching" style="padding:8px 12px; border:1px solid #ccc; border-radius:10px; text-decoration:none;">Teaching</a>
+  <img src="/images/foto_FEDE.jpg"
+       alt="Federico Scabbia"
+       style="width:170px; height:auto; border-radius:14px; flex-shrink:0;">
+
+  <div style="min-width:240px; max-width:720px;">
+
+    <div style="font-size:2.1rem; font-weight:650; line-height:1.15; margin:0 0 10px 0;">
+      Federico Scabbia
+    </div>
+
+    <div style="margin:0 0 14px 0; display:flex; gap:10px; flex-wrap:wrap;">
+      <a href="#working-papers" style="padding:8px 12px; border:1px solid #ccc; border-radius:10px; text-decoration:none;">Working papers</a>
+      <a href="#cv" style="padding:8px 12px; border:1px solid #ccc; border-radius:10px; text-decoration:none;">CV</a>
+      <a href="#teaching" style="padding:8px 12px; border:1px solid #ccc; border-radius:10px; text-decoration:none;">Teaching</a>
+    </div>
+
+    I use data in many forms—**satellite imagery**, **large-scale text**, **images**, and **administrative data**—to study **social and economic dynamics**. My work emphasizes **careful data construction** combined with **empirical analysis** to understand how complex processes operate across countries and over time.
+
+    <div style="margin-top:10px;">
+      <strong>References:</strong>
+      <a href="https://bse.eu/people/reynal-querol-marta">Marta Reynal-Querol</a>, 
+      <a href="https://www.luigipascali.com/">Luigi Pascali</a>, 
+      <a href="https://sites.google.com/site/mariapetrovaphd/home">Maria Petrova</a>, 
+      <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=1060330">Marco Tabellini</a>.
+    </div>
+
+    <div style="margin-top:8px;">
+      I'm co-organizer of the
+      <a href="https://broadleaf-hibiscus-88e.notion.site/Natural-Language-in-Economics-Online-Seminar-7b75731a97c149139ed87d1a92afec8a">
+        Natural Language in Economics Workshop
+      </a>
+    </div>
+
+  </div>
 </div>
 
-I use data in many forms—**satellite imagery**, **large-scale text**, **images**, and **administrative data**—to study **social and economic dynamics**. My work emphasizes **careful data construction** combined with **empirical analysis** to understand how complex processes operate across countries and over time.
 
-**References:**  [Marta Reynal-Querol](https://bse.eu/people/reynal-querol-marta),  [Luigi Pascali](https://www.luigipascali.com/),  [Maria Petrova](https://sites.google.com/site/mariapetrovaphd/home),  [Marco Tabellini](https://www.hbs.edu/faculty/Pages/profile.aspx?facId=1060330).
-
-I'm co-organizer of the [Natural Language in Economics Workshop](https://broadleaf-hibiscus-88e.notion.site/Natural-Language-in-Economics-Online-Seminar-7b75731a97c149139ed87d1a92afec8a)
-
-## CV {#cv}
-
-[Download CV (PDF)](PASTE_YOUR_DROPBOX_CV_LINK_HERE)
-
-[↑ Back to top](#top)
-
-## Teaching {#teaching}
-
-*(I’ll add this section content later.)*
-
-[↑ Back to top](#top)
 
 ## Working papers {#working-papers}
 
@@ -42,5 +56,63 @@ I'm co-organizer of the [Natural Language in Economics Workshop](https://broadle
   *Working paper*  
 
   Short abstract: Analyzing 10 million news articles with LLMs, we map the anatomy of global conflict coverage, examining how international ties drive bias and shape downstream economic outcomes.
+
+
+
+
+## Teaching {#teaching}
+
+---
+title: "Data Science Thesis Supervision"
+collection: teaching
+type: "Master’s program"
+permalink: /teaching/2024-2025-msc-datascience-thesis
+venue: "Barcelona School of Economics"
+date: 2025-01-01
+location: "Barcelona, Spain"
+---
+
+
+I advise students on research design, data construction, empirical methods, and thesis writing, with projects focused on applied machine learning and data analysis.
+
+
+---
+title: "Finance Thesis Supervision"
+collection: teaching
+type: "Master’s program"
+permalink: /teaching/2024-2025-msc-finance-thesis
+venue: "Barcelona School of Economics"
+date: 2025-01-01
+location: "Barcelona, Spain"
+---
+
+
+I advise students on master’s theses in finance, with a focus on forecasting methods, data construction, and data management for financial applications.
+
+---
+title: "Master in International Marketing"
+collection: teaching
+type: "Guest Lecturer"
+permalink: /teaching/2024-ies-abroad-guest-lectures
+venue: "IES Abroad Barcelona"
+date: 2024-01-01
+location: "Barcelona, Spain"
+---
+Guest lecturer at **IES Abroad Barcelona**, delivering two lectures:
+- **Celebrity CEOs**: economic and strategic implications of CEO public visibility, media exposure, and firm outcomes.
+- **Marketing Strategy**: core concepts in firm positioning, consumer targeting, and strategic communication.
+
+---
+title: "Business Organisation and Management I"
+collection: teaching
+type: "Undergraduate course"
+permalink: /teaching/business-organisation-management-ta
+venue: "Universitat Pompeu Fabra"
+date: 2024-01-01
+location: "Barcelona, Spain"
+---
+
+Teaching assistant for the undergraduate course. Responsibilities included leading tutorial sessions, assisting with coursework and exams, and providing academic support to students on core topics in organization, management, and firm behavior.
+
 
 [↑ Back to top](#top)
