@@ -85,11 +85,11 @@ I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-s
 ### Barcelona School of Economics
 
 **Data Science Thesis Supervision**  
-*Master’s program* · 2024–2025 · Barcelona  
+*Master’s program* · 2024–2025 
 I advise students on research design, data construction, empirical methods, and thesis writing, with projects focused on applied machine learning and data analysis.
 
 **Finance Thesis Supervision**  
-*Master’s program* · 2024–2025 · Barcelona  
+*Master’s program* · 2024–2025   
 I supervise master’s theses in finance, with a focus on forecasting methods, data construction, and data management for financial applications.
 
 ---
