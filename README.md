@@ -5,16 +5,16 @@
 <img src="/images/foto_FEDE.jpg"
      alt="Federico Scabbia"
      style="
-       width:35%;
-       max-width:220px;
-       min-width:140px;
+       width:clamp(210px, 55vw, 320px);
        height:auto;
        border-radius:14px;
        flex-shrink:0;
      ">
 
 
-  <div style="min-width:240px; max-width:720px;">
+
+<div style="flex:1; min-width:280px; max-width:980px;">
+
 
     <div style="font-size:2.1rem; font-weight:650; line-height:1.15; margin:0 0 10px 0;">
       Federico Scabbia
