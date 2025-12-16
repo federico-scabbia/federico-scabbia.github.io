@@ -55,11 +55,9 @@ I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-s
 ## Working papers {#working-papers}
 
 - **The New Scramble for Africa: The Case of Illegal Fishing**  
-  *Working paper*  
   [[Slides]](https://www.dropbox.com/scl/fi/zp1gnnqq159ucrotjetjv/FS_presentation.pptx?rlkey=kwor4v8p2lj5do8unohr1l2kn&dl=0)
 
-- **Leaders and Ideologies**  
-  *Working paper*  
+- **Leaders and Ideologies** 
 
   <details>
   <summary><em>Abstract</em></summary>
@@ -70,7 +68,7 @@ I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-s
 
 - **Media Bias of Conflict**  
   *with Ricardo Baeza-Yates, Marta Reynal-Querol, Elliot Motte*  
-  *Working paper*  
+
 
   <details>
   <summary><em>Abstract</em></summary>
