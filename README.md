@@ -7,7 +7,7 @@
      style="
        display:block;
        margin:0 auto 12px auto;
-       width:clamp(240px, 65vw, 380px);
+       width:clamp(240px, 65vw, 300px);
        height:auto;
        border-radius:16px;
      ">
