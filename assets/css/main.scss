@@ -44,3 +44,8 @@
 .page__footer {
   display: none !important;
 }
+/* Make images scale properly on mobile */
+.page__content img {
+  max-width: 100%;
+  height: auto;
+}
