@@ -9,5 +9,11 @@ group :jekyll_plugins do
   gem 'webrick', '~> 1.8'
 end
 
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
+end
+
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+gem 'bigdecimal'
