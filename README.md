@@ -20,7 +20,7 @@
 }
 </script>
 
-<div style="max-width:960px; margin:0 auto; padding:40px 20px 60px 20px; font-family:'Source Sans Pro', 'Segoe UI', sans-serif; color:#1a1a1a; line-height:1.7;">
+<div style="max-width:1140px; margin:0 auto; padding:40px 20px 60px 20px; font-family:'Source Sans Pro', 'Segoe UI', sans-serif; color:#1a1a1a; line-height:1.7;">
 
 <!-- ═══════════════════ HEADER ═══════════════════ -->
 
