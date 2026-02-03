@@ -1,0 +1,7 @@
+.claude/
+.sass-cache/
+_site/
+Gemfile.lock
+federico-scabbia.github.io/
+nul
+CLAUDE.md
