@@ -119,7 +119,7 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
 </div>
 
 <div style="padding:16px 24px; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:4px; border-left:3px solid #8b2500;">
-  <a href="/files/CV_Federico_Scabbia.pdf" style="color:#8b2500; text-decoration:none; font-weight:600; font-size:1rem; border-bottom:1px solid #8b250066;">Download CV (PDF) &#8599;</a>
+  <a href="/vc" style="color:#8b2500; text-decoration:none; font-weight:600; font-size:1rem; border-bottom:1px solid #8b250066;">View CV &#8599;</a>
 </div>
 
 </div>
