@@ -78,7 +78,9 @@ I use diverse data sources—<strong>satellite imagery</strong>, <strong>large-s
 
 
 
+## CV {#cv}
 
+[Download CV (PDF)](/files/CV_Federico_Scabbia.pdf)
 
 ## Teaching {#teaching}
 
