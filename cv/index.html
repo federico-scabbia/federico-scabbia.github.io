@@ -5,526 +5,293 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV — Federico Scabbia</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --ink: #1a1a1a;
-      --accent: #8b2500;
-      --accent-light: rgba(139, 37, 0, 0.07);
-      --body: #2d2d2d;
-      --muted: #6b6b6b;
-      --faint: #999;
-      --rule: #e0dbd4;
-      --cream: #faf8f5;
-      --cream-deep: #f5f2ed;
-      --white: #fff;
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --sans: 'Source Sans Pro', 'Segoe UI', sans-serif;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--sans);
-      color: var(--body);
-      line-height: 1.7;
-      background: var(--white);
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ── Toolbar ── */
-    .toolbar {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 28px;
-      background: var(--ink);
-      color: var(--white);
-      font-size: 0.88rem;
-      letter-spacing: 0.3px;
-      border-bottom: 3px solid var(--accent);
-    }
-    .toolbar-title {
-      font-family: var(--serif);
-      font-weight: 600;
-      font-size: 1.05rem;
-    }
-    .toolbar-links { display: flex; gap: 20px; }
-    .toolbar-links a {
-      color: #e0c9b8;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.4px;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-    .toolbar-links a:hover { color: #fff; }
-
-    /* ── Page container ── */
-    .page {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    /* ── Header ── */
-    .cv-header {
-      text-align: center;
-      margin-bottom: 12px;
-      padding-bottom: 28px;
-      border-bottom: 2px solid var(--ink);
-    }
-    .cv-header h1 {
-      font-family: var(--serif);
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: var(--ink);
-      letter-spacing: -0.5px;
-      line-height: 1.1;
-      margin-bottom: 8px;
-    }
-    .cv-header .subtitle {
-      font-size: 0.9rem;
-      color: var(--muted);
-      letter-spacing: 0.6px;
-    }
-    .cv-header .subtitle a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(139,37,0,0.25);
-    }
-    .cv-header .subtitle a:hover {
-      border-bottom-color: var(--accent);
-    }
-
-    /* ── Section headings ── */
-    .section {
-      margin-top: 40px;
-    }
-    .section-title {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-    .section-title h2 {
-      font-family: var(--serif);
-      font-size: 1.55rem;
-      font-weight: 700;
-      font-style: italic;
-      color: var(--accent);
-      white-space: nowrap;
-    }
-    .section-title::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(to right, var(--rule), transparent);
-    }
-
-    /* ── Entry rows ── */
-    .entry {
-      display: grid;
-      grid-template-columns: 160px 1fr;
-      gap: 0 32px;
-      margin-bottom: 28px;
-      position: relative;
-    }
-    .entry-date {
-      font-size: 0.88rem;
-      color: var(--muted);
-      padding-top: 2px;
-      line-height: 1.6;
-    }
-    .entry-body {}
-    .entry-institution {
-      font-weight: 700;
-      color: var(--ink);
-      font-size: 1.02rem;
-    }
-    .entry-degree {
-      font-style: italic;
-      color: var(--body);
-      font-size: 0.95rem;
-      margin-top: 1px;
-    }
-    .entry-detail {
-      font-size: 0.93rem;
-      color: #3a3a3a;
-      line-height: 1.75;
-      margin-top: 4px;
-    }
-    .entry-detail ul {
-      list-style: none;
-      padding: 0;
-    }
-    .entry-detail ul li {
-      position: relative;
-      padding-left: 14px;
-    }
-    .entry-detail ul li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 10px;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-
-    /* ── Award items ── */
-    .award {
-      margin-bottom: 16px;
-      padding-left: 18px;
-      position: relative;
-      font-size: 0.93rem;
-      line-height: 1.75;
-      color: #3a3a3a;
-    }
-    .award::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 11px;
-      width: 6px;
-      height: 6px;
-      border: 1.5px solid var(--accent);
-      border-radius: 50%;
-    }
-    .award strong {
-      color: var(--ink);
-    }
-    .award em {
-      font-style: italic;
-      color: var(--accent);
-    }
-
-    /* ── Skills / Languages grid ── */
-    .tag-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .tag {
-      padding: 6px 16px;
-      background: linear-gradient(135deg, var(--cream) 0%, var(--cream-deep) 100%);
-      border-left: 2px solid var(--accent);
-      border-radius: 0 3px 3px 0;
-      font-size: 0.9rem;
-      color: var(--ink);
-    }
-    .tag .level {
-      color: var(--muted);
-      font-size: 0.82rem;
-      margin-left: 4px;
-    }
-
-    .lang-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-    }
-    .lang-card {
-      padding: 14px 20px;
-      background: linear-gradient(135deg, var(--cream) 0%, var(--cream-deep) 100%);
-      border-left: 3px solid var(--accent);
-      border-radius: 0 4px 4px 0;
-    }
-    .lang-card .lang-name {
-      font-weight: 700;
-      color: var(--ink);
-      font-size: 0.97rem;
-    }
-    .lang-card .lang-level {
-      font-size: 0.88rem;
-      color: var(--muted);
-      margin-top: 2px;
-    }
-
-    /* ── Footer ── */
-    .cv-footer {
-      margin-top: 56px;
-      padding-top: 20px;
-      border-top: 2px solid var(--ink);
-      text-align: center;
-    }
-    .cv-footer a {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.4px;
-      text-transform: uppercase;
-      border-bottom: 1px solid rgba(139,37,0,0.25);
-    }
-    .cv-footer a:hover { border-bottom-color: var(--accent); }
-
-    /* ── Responsive ── */
-    @media (max-width: 640px) {
-      .entry {
-        grid-template-columns: 1fr;
-        gap: 2px;
-      }
-      .entry-date {
-        font-size: 0.82rem;
-        margin-bottom: 2px;
-      }
-      .cv-header h1 { font-size: 2.2rem; }
-      .toolbar { padding: 10px 16px; flex-wrap: wrap; gap: 8px; }
-      .toolbar-links { gap: 14px; }
-      .page { padding: 32px 16px 60px; }
-    }
-
-    /* ── Print ── */
-    @media print {
-      .toolbar { display: none; }
-      .page { padding: 0; max-width: 100%; }
-      .section { break-inside: avoid; }
-      .entry { break-inside: avoid; }
-    }
-  </style>
 </head>
-<body>
+<body style="margin:0; font-family:'Source Sans Pro', 'Segoe UI', sans-serif; color:#1a1a1a; line-height:1.7; -webkit-font-smoothing:antialiased;">
 
-  <div class="toolbar">
-    <span class="toolbar-title">Federico Scabbia</span>
-    <div class="toolbar-links">
-      <a href="/files/CV_Federico_Scabbia.pdf" download>Download PDF</a>
-      <a href="/">Back to site</a>
-    </div>
+<div style="max-width:820px; margin:0 auto; padding:40px 20px 60px 20px; font-family:'Source Sans Pro', 'Segoe UI', sans-serif; color:#1a1a1a; line-height:1.7;">
+
+<!-- ═══════════════════ HEADER ═══════════════════ -->
+
+<div style="margin-bottom:40px; padding-bottom:32px; border-bottom:2px solid #1a1a1a;">
+
+<div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:2.6rem; font-weight:700; line-height:1.1; margin:0 0 4px 0; letter-spacing:-0.5px; color:#1a1a1a;">
+  Curriculum Vitae
+</div>
+
+<div style="font-family:'Source Sans Pro', sans-serif; font-size:0.95rem; font-weight:400; color:#6b6b6b; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:18px;">
+  Federico Scabbia · Universitat Pompeu Fabra, Barcelona
+</div>
+
+<div style="display:flex; gap:8px; flex-wrap:wrap;">
+  <a href="/" style="padding:7px 16px; border:1.5px solid #1a1a1a; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#1a1a1a; letter-spacing:0.4px; text-transform:uppercase;">Back to Site</a>
+  <a href="/files/CV_Federico_Scabbia.pdf" download style="padding:7px 16px; border:1.5px solid #8b2500; background:#8b2500; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#fff; letter-spacing:0.4px; text-transform:uppercase;">Download PDF</a>
+</div>
+
+</div>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+
+<div style="margin-bottom:36px; font-size:0.93rem; color:#3a3a3a;">
+  Carrer del Pintor Fortuny 10, Barcelona &ensp;&middot;&ensp;
+  <a href="mailto:federico.scabbia@upf.edu" style="color:#8b2500; text-decoration:none; border-bottom:1px solid #8b250044;">federico.scabbia@upf.edu</a>
+</div>
+
+<!-- ═══════════════════ EDUCATION ═══════════════════ -->
+
+<div style="margin-bottom:44px;">
+
+<div style="display:flex; align-items:center; gap:14px; margin-bottom:28px;">
+  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.65rem; font-weight:700; color:#1a1a1a; white-space:nowrap;">Education</div>
+  <div style="flex:1; height:1px; background:linear-gradient(to right, #1a1a1a, transparent);"></div>
+</div>
+
+<!-- UPF -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Universitat Pompeu Fabra, Barcelona</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Sep 2023 &ndash; present</div>
   </div>
+  <div style="font-style:italic; color:#2d2d2d; font-size:0.95rem; margin-top:2px;">Master of Research, PhD Track</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; margin-top:4px;">Main courses: Data Science, Behavioral, Political Economy</div>
+</div>
 
-  <div class="page">
-
-    <!-- ── Header ── -->
-    <header class="cv-header">
-      <h1>Federico Scabbia</h1>
-      <div class="subtitle">
-        Carrer del Pintor Fortuny 10, Barcelona&ensp;&middot;&ensp;
-        <a href="mailto:federico.scabbia@upf.edu">federico.scabbia@upf.edu</a>
-      </div>
-    </header>
-
-    <!-- ════════════ EDUCATION ════════════ -->
-    <section class="section">
-      <div class="section-title"><h2>Education</h2></div>
-
-      <div class="entry">
-        <div class="entry-date">Sep 2023 &ndash; present</div>
-        <div class="entry-body">
-          <div class="entry-institution">Universitat Pompeu Fabra, Barcelona</div>
-          <div class="entry-degree">Master of Research, PhD Track</div>
-          <div class="entry-detail">Main courses: Data Science, Behavioral, Political Economy</div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Sep 2022 &ndash; Jul 2023</div>
-        <div class="entry-body">
-          <div class="entry-institution">Barcelona School of Economics, Barcelona</div>
-          <div class="entry-degree">Master of Sciences, PhD Track</div>
-          <div class="entry-detail">Main courses: Econometrics, Microeconomics, Macroeconomics</div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Sep 2019 &ndash; Oct 2021</div>
-        <div class="entry-body">
-          <div class="entry-institution">Bocconi University, Milan</div>
-          <div class="entry-degree">Master of Sciences, Economic and Social Sciences &mdash; 110/110 cum laude</div>
-          <div class="entry-detail">
-            Main courses: Econometrics, Microeconomics, Behavioral Economics, Macroeconomics, Machine Learning
-            <ul>
-              <li>Member of Bocconi Students for Data Science (Sep 2020 &ndash; Jul 2022)</li>
-              <li>Attended additional PhD course <em>&ldquo;Topics in Statistical and Machine Learning&rdquo;</em> by D. Durante (grade A)</li>
-            </ul>
-            Thesis: <em>What Makes the Front Page? Theoretical and Empirical Analysis of News Selection</em><br>
-            Supervisor: Professor Nicola Gennaioli
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Sep 2018 &ndash; Dec 2018</div>
-        <div class="entry-body">
-          <div class="entry-institution">University of The West of Scotland, Glasgow</div>
-          <div class="entry-degree">Erasmus Exchange &mdash; GPA: 30.33/30</div>
-          <div class="entry-detail">Main courses: Marketing Communications, Strategic Management, Business in Action</div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Sep 2016 &ndash; Jul 2019</div>
-        <div class="entry-body">
-          <div class="entry-institution">University of Trento, Trento</div>
-          <div class="entry-degree">Bachelor&rsquo;s Degree, Economic Sciences &mdash; 110/110 cum laude</div>
-          <div class="entry-detail">
-            Main courses: Econometrics, Microeconomics, Statistics<br>
-            Thesis: <em>Firms, Social (Ir)responsibility and Boycotts: An Economic Analysis</em><br>
-            Supervisor: Professor Marco Faillo
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Sep 2011 &ndash; Jul 2016</div>
-        <div class="entry-body">
-          <div class="entry-institution">Liceo Classico Concetto Marchesi, Padua</div>
-          <div class="entry-degree">Classical Studies &mdash; 100/100</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ════════════ PROFESSIONAL EXPERIENCE ════════════ -->
-    <section class="section">
-      <div class="section-title"><h2>Professional Experience</h2></div>
-
-      <div class="entry">
-        <div class="entry-date">Sep 2022 &ndash; present</div>
-        <div class="entry-body">
-          <div class="entry-institution">Universitat Pompeu Fabra, Barcelona</div>
-          <div class="entry-degree">Research Assistant</div>
-          <div class="entry-detail">Research assistant for Professors Marta Reynal-Querol and Luigi Pascali. Scraped data and provided big data management using Python.</div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Aug &ndash; Nov 2023</div>
-        <div class="entry-body">
-          <div class="entry-institution">Bank of Italy, Roma</div>
-          <div class="entry-degree">Trainee</div>
-          <div class="entry-detail">Co-author in working project <em>&ldquo;Cyber Attacks Effect on Macroeconomic Variables&rdquo;</em>. Scraped data from FACTIVA and analyzed it using different macro-econometrics approaches.</div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Sep 2021 &ndash; Jul 2022</div>
-        <div class="entry-body">
-          <div class="entry-institution">Bocconi University, Milan</div>
-          <div class="entry-degree">Research Assistant</div>
-          <div class="entry-detail">Research assistant for Professor Guido Tabellini. Solved dynamic model on MATLAB and converted video content to text using neural networks to perform text analysis. Used BERT algorithm to categorize Reddit comments for the project <em>&ldquo;Online Political Debates&rdquo;</em>.</div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Jul &ndash; Sep 2021</div>
-        <div class="entry-body">
-          <div class="entry-institution">University of Oxford, Oxford</div>
-          <div class="entry-degree">Research Assistant</div>
-          <div class="entry-detail">Research assistant for Professor Pedro Bordalo. Scraped data from Vanderbilt database and provided text analysis using machine learning techniques.</div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Feb 2021 &ndash; Jul 2022</div>
-        <div class="entry-body">
-          <div class="entry-institution">Harvard Business School, Boston</div>
-          <div class="entry-degree">Research Assistant</div>
-          <div class="entry-detail">Research assistant for Professor Marco Tabellini. Developed econometric analysis and scraped data using STATA and Python.</div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Feb &ndash; May 2021</div>
-        <div class="entry-body">
-          <div class="entry-institution">Bocconi University, Milan</div>
-          <div class="entry-degree">Research Assistant</div>
-          <div class="entry-detail">Research assistant for Professor Mara Squicciarini. Developed supervised machine learning algorithm to identify discriminatory tweets against members of the Chinese community during the early stages of Covid outbreak.</div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Feb 2020 &ndash; May 2021</div>
-        <div class="entry-body">
-          <div class="entry-institution">Innocenzo Gasparini Institute of Economic Research, Milan</div>
-          <div class="entry-degree">Visiting Student</div>
-          <div class="entry-detail">
-            Research assistant for Professors Paola Cillo and Mara Squicciarini. Intensive use of R and Python for machine learning and data cleaning.
-            <ul>
-              <li>Organized seminars for IGIER fellows, presented academic articles and discussed their validity</li>
-              <li>Authored articles on <em>Bocconi Knowledge</em> about IGIER seminars</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Feb &ndash; Sep 2019</div>
-        <div class="entry-body">
-          <div class="entry-institution">Junior Enterprise Trento, Trento</div>
-          <div class="entry-degree">Coordinator, Business Area</div>
-          <div class="entry-detail">Coordinated and managed 11 associates and presented the association products to potential clients.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ════════════ AWARDS ════════════ -->
-    <section class="section">
-      <div class="section-title"><h2>Awards &amp; Scholarships</h2></div>
-
-      <div class="award">
-        <strong>Google Cloud Research Grant</strong> (2023&ndash;2025): $2,000 computing credits granted by Google for the project <em>&ldquo;The New Scramble for Africa: The Case of Illegal Fishing&rdquo;</em>.
-      </div>
-
-      <div class="award">
-        <strong>Bonaldo Stringher Scholarship</strong> (2022&ndash;2024): 2-year Bank of Italy scholarship for promising graduates in Political Economy (&euro;27,000 yearly income and tuition fees granted).
-      </div>
-
-      <div class="award">
-        <strong>Collegio Bernardo Clesio</strong> (2016&ndash;2019): Placed second among 141 participants and selected for a merit-based scholarship (free accommodation and other benefits granted).
-      </div>
-
-      <div class="award">
-        <strong>Mentors4U</strong> (2018&ndash;present): Selected (top 25%) to participate in Mentors4U, a merit-based undergraduate mentoring program.
-      </div>
-    </section>
-
-    <!-- ════════════ LANGUAGES ════════════ -->
-    <section class="section">
-      <div class="section-title"><h2>Languages</h2></div>
-
-      <div class="lang-grid">
-        <div class="lang-card">
-          <div class="lang-name">Italian</div>
-          <div class="lang-level">Native speaker</div>
-        </div>
-        <div class="lang-card">
-          <div class="lang-name">English</div>
-          <div class="lang-level">Fluent &mdash; IELTS 8.5 (Nov 2021)</div>
-        </div>
-        <div class="lang-card">
-          <div class="lang-name">Spanish</div>
-          <div class="lang-level">Fluent &mdash; C1</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ════════════ TECHNICAL SKILLS ════════════ -->
-    <section class="section">
-      <div class="section-title"><h2>Technical Skills</h2></div>
-
-      <div class="tag-grid">
-        <div class="tag">R, Python <span class="level">Advanced</span></div>
-        <div class="tag">STATA <span class="level">Advanced</span></div>
-        <div class="tag">MATLAB <span class="level">Advanced</span></div>
-        <div class="tag">LaTeX <span class="level">Advanced</span></div>
-        <div class="tag">Excel, Word, PowerPoint <span class="level">Advanced (ECDL)</span></div>
-        <div class="tag">SQL / BigQuery <span class="level">Intermediate</span></div>
-      </div>
-    </section>
-
-    <!-- ── Footer ── -->
-    <footer class="cv-footer">
-      <a href="/">Back to site &larr;</a>
-    </footer>
-
+<!-- BSE -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Barcelona School of Economics, Barcelona</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Sep 2022 &ndash; Jul 2023</div>
   </div>
+  <div style="font-style:italic; color:#2d2d2d; font-size:0.95rem; margin-top:2px;">Master of Sciences, PhD Track</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; margin-top:4px;">Main courses: Econometrics, Microeconomics, Macroeconomics</div>
+</div>
+
+<!-- Bocconi MSc -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Bocconi University, Milan</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Sep 2019 &ndash; Oct 2021</div>
+  </div>
+  <div style="font-style:italic; color:#2d2d2d; font-size:0.95rem; margin-top:2px;">Master of Sciences, Economic and Social Sciences &mdash; 110/110 cum laude</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:6px;">
+    Main courses: Econometrics, Microeconomics, Behavioral Economics, Macroeconomics, Machine Learning
+  </div>
+  <div style="margin-top:10px; padding-top:10px; border-top:1px solid #e0dbd4; font-size:0.93rem; color:#3a3a3a; line-height:1.75;">
+    Member of Bocconi Students for Data Science (Sep 2020 &ndash; Jul 2022)<br>
+    Attended additional PhD course <em>&ldquo;Topics in Statistical and Machine Learning&rdquo;</em> by D. Durante (grade A)<br>
+    Thesis: <em>What Makes the Front Page? Theoretical and Empirical Analysis of News Selection</em><br>
+    Supervisor: Professor Nicola Gennaioli
+  </div>
+</div>
+
+<!-- Glasgow -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">University of The West of Scotland, Glasgow</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Sep 2018 &ndash; Dec 2018</div>
+  </div>
+  <div style="font-style:italic; color:#2d2d2d; font-size:0.95rem; margin-top:2px;">Erasmus Exchange &mdash; GPA: 30.33/30</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; margin-top:4px;">Main courses: Marketing Communications, Strategic Management, Business in Action</div>
+</div>
+
+<!-- Trento -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">University of Trento, Trento</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Sep 2016 &ndash; Jul 2019</div>
+  </div>
+  <div style="font-style:italic; color:#2d2d2d; font-size:0.95rem; margin-top:2px;">Bachelor&rsquo;s Degree, Economic Sciences &mdash; 110/110 cum laude</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">
+    Main courses: Econometrics, Microeconomics, Statistics<br>
+    Thesis: <em>Firms, Social (Ir)responsibility and Boycotts: An Economic Analysis</em><br>
+    Supervisor: Professor Marco Faillo
+  </div>
+</div>
+
+<!-- Liceo -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Liceo Classico Concetto Marchesi, Padua</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Sep 2011 &ndash; Jul 2016</div>
+  </div>
+  <div style="font-style:italic; color:#2d2d2d; font-size:0.95rem; margin-top:2px;">Classical Studies &mdash; 100/100</div>
+</div>
+
+</div>
+
+<!-- ═══════════════════ PROFESSIONAL EXPERIENCE ═══════════════════ -->
+
+<div style="margin-bottom:44px;">
+
+<div style="display:flex; align-items:center; gap:14px; margin-bottom:28px;">
+  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.65rem; font-weight:700; color:#1a1a1a; white-space:nowrap;">Professional Experience</div>
+  <div style="flex:1; height:1px; background:linear-gradient(to right, #1a1a1a, transparent);"></div>
+</div>
+
+<!-- UPF RA -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Universitat Pompeu Fabra, Barcelona</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Sep 2022 &ndash; present</div>
+  </div>
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem; margin-top:2px;">Research Assistant</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">Research assistant for Professors Marta Reynal-Querol and Luigi Pascali. Scraped data and provided big data management using Python.</div>
+</div>
+
+<!-- Bank of Italy -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Bank of Italy, Roma</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Aug &ndash; Nov 2023</div>
+  </div>
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem; margin-top:2px;">Trainee</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">Co-author in working project <em>&ldquo;Cyber Attacks Effect on Macroeconomic Variables&rdquo;</em>. Scraped data from FACTIVA and analyzed it using different macro-econometrics approaches.</div>
+</div>
+
+<!-- Bocconi RA (Tabellini G.) -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Bocconi University, Milan</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Sep 2021 &ndash; Jul 2022</div>
+  </div>
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem; margin-top:2px;">Research Assistant</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">Research assistant for Professor Guido Tabellini. Solved dynamic model on MATLAB and converted video content to text using neural networks to perform text analysis. Used BERT algorithm to categorize Reddit comments for the project <em>&ldquo;Online Political Debates&rdquo;</em>.</div>
+</div>
+
+<!-- Oxford -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">University of Oxford, Oxford</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Jul &ndash; Sep 2021</div>
+  </div>
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem; margin-top:2px;">Research Assistant</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">Research assistant for Professor Pedro Bordalo. Scraped data from Vanderbilt database and provided text analysis using machine learning techniques.</div>
+</div>
+
+<!-- HBS -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Harvard Business School, Boston</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Feb 2021 &ndash; Jul 2022</div>
+  </div>
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem; margin-top:2px;">Research Assistant</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">Research assistant for Professor Marco Tabellini. Developed econometric analysis and scraped data using STATA and Python.</div>
+</div>
+
+<!-- Bocconi RA (Squicciarini) -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Bocconi University, Milan</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Feb &ndash; May 2021</div>
+  </div>
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem; margin-top:2px;">Research Assistant</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">Research assistant for Professor Mara Squicciarini. Developed supervised machine learning algorithm to identify discriminatory tweets against members of the Chinese community during the early stages of Covid outbreak.</div>
+</div>
+
+<!-- IGIER -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Innocenzo Gasparini Institute of Economic Research, Milan</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Feb 2020 &ndash; May 2021</div>
+  </div>
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem; margin-top:2px;">Visiting Student</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">
+    Research assistant for Professors Paola Cillo and Mara Squicciarini. Intensive use of R and Python for machine learning and data cleaning.
+  </div>
+  <div style="margin-top:10px; padding-top:10px; border-top:1px solid #e0dbd4; font-size:0.93rem; color:#3a3a3a; line-height:1.75;">
+    Organized seminars for IGIER fellows, presented academic articles and discussed their validity<br>
+    Authored articles on <em>Bocconi Knowledge</em> about IGIER seminars
+  </div>
+</div>
+
+<!-- Junior Enterprise -->
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;">
+    <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a;">Junior Enterprise Trento, Trento</div>
+    <div style="font-size:0.85rem; color:#6b6b6b;">Feb &ndash; Sep 2019</div>
+  </div>
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem; margin-top:2px;">Coordinator, Business Area</div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">Coordinated and managed 11 associates and presented the association products to potential clients.</div>
+</div>
+
+</div>
+
+<!-- ═══════════════════ AWARDS & SCHOLARSHIPS ═══════════════════ -->
+
+<div style="margin-bottom:44px;">
+
+<div style="display:flex; align-items:center; gap:14px; margin-bottom:28px;">
+  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.65rem; font-weight:700; color:#1a1a1a; white-space:nowrap;">Awards &amp; Scholarships</div>
+  <div style="flex:1; height:1px; background:linear-gradient(to right, #1a1a1a, transparent);"></div>
+</div>
+
+<div style="margin-bottom:20px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem;">Google Cloud Research Grant <span style="font-weight:400; color:#6b6b6b;">(2023&ndash;2025)</span></div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">$2,000 computing credits granted by Google for the project <em>&ldquo;The New Scramble for Africa: The Case of Illegal Fishing&rdquo;</em>.</div>
+</div>
+
+<div style="margin-bottom:20px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem;">Bonaldo Stringher Scholarship <span style="font-weight:400; color:#6b6b6b;">(2022&ndash;2024)</span></div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">2-year Bank of Italy scholarship for promising graduates in Political Economy (&euro;27,000 yearly income and tuition fees granted).</div>
+</div>
+
+<div style="margin-bottom:20px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem;">Collegio Bernardo Clesio <span style="font-weight:400; color:#6b6b6b;">(2016&ndash;2019)</span></div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">Placed second among 141 participants and selected for a merit-based scholarship (free accommodation and other benefits granted).</div>
+</div>
+
+<div style="margin-bottom:20px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem;">Mentors4U <span style="font-weight:400; color:#6b6b6b;">(2018&ndash;present)</span></div>
+  <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.75; margin-top:4px;">Selected (top 25%) to participate in Mentors4U, a merit-based undergraduate mentoring program.</div>
+</div>
+
+</div>
+
+<!-- ═══════════════════ LANGUAGES ═══════════════════ -->
+
+<div style="margin-bottom:44px;">
+
+<div style="display:flex; align-items:center; gap:14px; margin-bottom:28px;">
+  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.65rem; font-weight:700; color:#1a1a1a; white-space:nowrap;">Languages</div>
+  <div style="flex:1; height:1px; background:linear-gradient(to right, #1a1a1a, transparent);"></div>
+</div>
+
+<div style="padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0; font-size:0.93rem; color:#3a3a3a; line-height:2;">
+  <strong style="color:#1a1a1a;">Italian:</strong> native speaker<br>
+  <strong style="color:#1a1a1a;">English:</strong> fluent (IELTS 8.5, Nov 2021)<br>
+  <strong style="color:#1a1a1a;">Spanish:</strong> fluent (C1)
+</div>
+
+</div>
+
+<!-- ═══════════════════ TECHNICAL SKILLS ═══════════════════ -->
+
+<div style="margin-bottom:44px;">
+
+<div style="display:flex; align-items:center; gap:14px; margin-bottom:28px;">
+  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.65rem; font-weight:700; color:#1a1a1a; white-space:nowrap;">Technical Skills</div>
+  <div style="flex:1; height:1px; background:linear-gradient(to right, #1a1a1a, transparent);"></div>
+</div>
+
+<div style="padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0; font-size:0.93rem; color:#3a3a3a; line-height:2;">
+  <strong style="color:#1a1a1a;">R, Python:</strong> Advanced<br>
+  <strong style="color:#1a1a1a;">STATA:</strong> Advanced<br>
+  <strong style="color:#1a1a1a;">MATLAB:</strong> Advanced<br>
+  <strong style="color:#1a1a1a;">LaTeX:</strong> Advanced<br>
+  <strong style="color:#1a1a1a;">Excel, Word, PowerPoint:</strong> Advanced (ECDL certificate)<br>
+  <strong style="color:#1a1a1a;">SQL (Google BigQuery):</strong> Intermediate
+</div>
+
+</div>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+
+<div style="margin-top:40px; padding-top:20px; border-top:2px solid #1a1a1a; text-align:center;">
+  <div style="font-size:0.82rem; color:#999; letter-spacing:0.3px;">
+    <a href="/" style="color:#8b2500; text-decoration:none; border-bottom:1px solid #8b250044;">Back to site &#8592;</a>
+  </div>
+</div>
+
+</div>
 
 </body>
 </html>
