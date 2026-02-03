@@ -2,7 +2,25 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-<div style="max-width:820px; margin:0 auto; padding:40px 20px 60px 20px; font-family:'Source Sans Pro', 'Segoe UI', sans-serif; color:#1a1a1a; line-height:1.7;">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Federico Scabbia",
+  "jobTitle": "PhD Candidate in Economics",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Universitat Pompeu Fabra"
+  },
+  "url": "https://federico-scabbia.github.io",
+  "image": "https://federico-scabbia.github.io/images/foto_FEDE.jpg",
+  "sameAs": [
+    "https://www.linkedin.com/in/federico-scabbia/"
+  ]
+}
+</script>
+
+<div style="max-width:960px; margin:0 auto; padding:40px 20px 60px 20px; font-family:'Source Sans Pro', 'Segoe UI', sans-serif; color:#1a1a1a; line-height:1.7;">
 
 <!-- ═══════════════════ HEADER ═══════════════════ -->
 
@@ -21,18 +39,19 @@
 
 <div style="flex:1; min-width:280px;">
 
-<div style="font-family:'Cormorant Garamond', 'Georgia', serif; font-size:2.6rem; font-weight:700; line-height:1.1; margin:0 0 4px 0; letter-spacing:-0.5px; color:#1a1a1a;">
+<h1 style="font-family:'Cormorant Garamond', 'Georgia', serif; font-size:2.6rem; font-weight:700; line-height:1.1; margin:0 0 4px 0; letter-spacing:-0.5px; color:#1a1a1a;">
   Federico Scabbia
-</div>
+</h1>
 
 <div style="font-family:'Source Sans Pro', sans-serif; font-size:0.95rem; font-weight:400; color:#6b6b6b; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:18px;">
-  Researcher · Universitat Pompeu Fabra, Barcelona
+  PhD Candidate in Economics · Universitat Pompeu Fabra, Barcelona
 </div>
 
 <div style="margin:0 0 20px 0; display:flex; gap:8px; flex-wrap:wrap;">
   <a href="#working-papers" style="padding:7px 16px; border:1.5px solid #1a1a1a; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#1a1a1a; letter-spacing:0.4px; text-transform:uppercase; transition:all 0.2s;">Working Papers</a>
   <a href="/cv" style="padding:7px 16px; border:1.5px solid #1a1a1a; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#1a1a1a; letter-spacing:0.4px; text-transform:uppercase;">CV</a>
   <a href="#teaching" style="padding:7px 16px; border:1.5px solid #1a1a1a; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#1a1a1a; letter-spacing:0.4px; text-transform:uppercase;">Teaching</a>
+  <a href="https://www.linkedin.com/in/federico-scabbia/" style="padding:7px 16px; border:1.5px solid #1a1a1a; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#1a1a1a; letter-spacing:0.4px; text-transform:uppercase;">LinkedIn</a>
 </div>
 
 <div style="font-size:1.02rem; line-height:1.75; color:#2d2d2d;">
@@ -60,15 +79,15 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
 <div id="working-papers" style="margin-bottom:44px;">
 
 <div style="display:flex; align-items:center; gap:14px; margin-bottom:28px;">
-  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.65rem; font-weight:700; color:#1a1a1a; white-space:nowrap;">Working Papers</div>
+  <h2 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.65rem; font-weight:700; color:#1a1a1a; white-space:nowrap; margin:0;">Working Papers</h2>
   <div style="flex:1; height:1px; background:linear-gradient(to right, #1a1a1a, transparent);"></div>
 </div>
 
 <!-- Paper 1 -->
 <div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
-  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.2rem; font-weight:700; color:#1a1a1a; margin-bottom:6px;">
+  <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.2rem; font-weight:700; color:#1a1a1a; margin:0 0 6px 0;">
     The New Scramble for Africa: The Case of Illegal Fishing
-  </div>
+  </h3>
   <div style="font-size:0.9rem; margin-top:8px;">
     <a href="https://www.dropbox.com/scl/fi/zp1gnnqq159ucrotjetjv/FS_presentation.pptx?rlkey=kwor4v8p2lj5do8unohr1l2kn&dl=0" style="color:#8b2500; text-decoration:none; border-bottom:1px solid #8b250066; font-weight:600;">Slides &#8599;</a>
   </div>
@@ -76,9 +95,9 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
 
 <!-- Paper 2 -->
 <div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
-  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.2rem; font-weight:700; color:#1a1a1a; margin-bottom:4px;">
+  <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.2rem; font-weight:700; color:#1a1a1a; margin:0 0 4px 0;">
     Leaders and Ideologies
-  </div>
+  </h3>
   <details style="margin-top:8px;">
     <summary style="cursor:pointer; font-size:0.9rem; font-weight:600; color:#8b2500; list-style:none; display:flex; align-items:center; gap:6px;">
       <span style="font-size:0.75rem; display:inline-block; transition:transform 0.2s;">&#9654;</span> Abstract
@@ -91,9 +110,9 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
 
 <!-- Paper 3 -->
 <div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
-  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.2rem; font-weight:700; color:#1a1a1a; margin-bottom:4px;">
+  <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.2rem; font-weight:700; color:#1a1a1a; margin:0 0 4px 0;">
     Media Bias of Conflict
-  </div>
+  </h3>
   <div style="font-size:0.92rem; color:#555; margin-bottom:4px; font-style:italic;">
     with <a href="https://www.linkedin.com/in/ricardobaezayates/" style="color:#8b2500; text-decoration:none; border-bottom:1px solid #8b250044;">Ricardo Baeza-Yates</a>, Marta Reynal-Querol, <a href="https://elliot-motte.github.io/" style="color:#8b2500; text-decoration:none; border-bottom:1px solid #8b250044;">Elliot Motte</a>
   </div>
@@ -114,13 +133,13 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
 <div id="teaching" style="margin-bottom:44px;">
 
 <div style="display:flex; align-items:center; gap:14px; margin-bottom:28px;">
-  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.65rem; font-weight:700; color:#1a1a1a; white-space:nowrap;">Teaching</div>
+  <h2 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.65rem; font-weight:700; color:#1a1a1a; white-space:nowrap; margin:0;">Teaching</h2>
   <div style="flex:1; height:1px; background:linear-gradient(to right, #1a1a1a, transparent);"></div>
 </div>
 
 <!-- BSE -->
 <div style="margin-bottom:28px; padding:20px 24px; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:4px; border-left:3px solid #8b2500;">
-  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a; margin-bottom:2px;">Barcelona School of Economics</div>
+  <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a; margin:0 0 2px 0;">Barcelona School of Economics</h3>
 
   <div style="margin-top:14px;">
     <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem;">Data Science Thesis Supervision</div>
@@ -137,7 +156,7 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
 
 <!-- IES Abroad -->
 <div style="margin-bottom:28px; padding:20px 24px; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:4px; border-left:3px solid #8b2500;">
-  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a; margin-bottom:2px;">IES Abroad Barcelona</div>
+  <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a; margin:0 0 2px 0;">IES Abroad Barcelona</h3>
 
   <div style="margin-top:14px;">
     <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem;">Master in International Marketing</div>
@@ -152,7 +171,7 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
 
 <!-- UPF -->
 <div style="margin-bottom:28px; padding:20px 24px; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:4px; border-left:3px solid #8b2500;">
-  <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a; margin-bottom:2px;">Universitat Pompeu Fabra</div>
+  <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a; margin:0 0 2px 0;">Universitat Pompeu Fabra</h3>
 
   <div style="margin-top:14px;">
     <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem;">Business Organisation and Management I</div>
