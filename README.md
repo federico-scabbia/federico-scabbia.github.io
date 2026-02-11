@@ -154,9 +154,9 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
   </div>
 </div>
 
-<!-- IES Abroad -->
+<!-- ESCI-UPF -->
 <div style="margin-bottom:28px; padding:20px 24px; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:4px; border-left:3px solid #8b2500;">
-  <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a; margin:0 0 2px 0;">IES Abroad Barcelona</h3>
+  <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a; margin:0 0 2px 0;">ESCI-UPF</h3>
 
   <div style="margin-top:14px;">
     <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem;">Quantitative Marketing Research Class</div>
@@ -165,8 +165,13 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
       <a href="https://colab.research.google.com/drive/13TiJD7RP7ZnJNy6w38FzQa3FM9QaqowL?usp=sharing" style="color:#8b2500; text-decoration:none; border-bottom:1px solid #8b250066; font-weight:600;">Google Colab Notebook &#8599;</a>
     </div>
   </div>
+</div>
 
-  <div style="margin-top:16px; padding-top:16px; border-top:1px solid #e0dbd4;">
+<!-- IES Abroad -->
+<div style="margin-bottom:28px; padding:20px 24px; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:4px; border-left:3px solid #8b2500;">
+  <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; font-weight:700; color:#1a1a1a; margin:0 0 2px 0;">IES Abroad Barcelona</h3>
+
+  <div style="margin-top:14px;">
     <div style="font-weight:600; color:#1a1a1a; font-size:0.97rem;">Master in International Marketing</div>
     <div style="font-size:0.88rem; color:#777; margin-bottom:6px;">Guest Lecturer · 2024</div>
     <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.7;">Delivered two lectures:</div>
