@@ -163,6 +163,8 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
     <div style="font-size:0.88rem; color:#777; margin-bottom:6px;">2026</div>
     <div style="font-size:0.93rem; color:#3a3a3a; line-height:1.7;">
       <a href="https://colab.research.google.com/drive/13TiJD7RP7ZnJNy6w38FzQa3FM9QaqowL?usp=sharing" style="color:#8b2500; text-decoration:none; border-bottom:1px solid #8b250066; font-weight:600;">Google Colab Notebook &#8599;</a>
+      ·
+      <a href="/files/Quantitative_Marketing_Research_Slides.pdf" style="color:#8b2500; text-decoration:none; border-bottom:1px solid #8b250066; font-weight:600;">Lecture Slides &#8599;</a>
     </div>
   </div>
 </div>
