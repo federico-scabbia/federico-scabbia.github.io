@@ -49,6 +49,7 @@
 
 <div style="margin:0 0 20px 0; display:flex; gap:8px; flex-wrap:wrap;">
   <a href="#working-papers" style="padding:7px 16px; border:1.5px solid #1a1a1a; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#1a1a1a; letter-spacing:0.4px; text-transform:uppercase; transition:all 0.2s;">Working Papers</a>
+  <a href="#grants" style="padding:7px 16px; border:1.5px solid #1a1a1a; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#1a1a1a; letter-spacing:0.4px; text-transform:uppercase;">Grants</a>
   <a href="/cv" style="padding:7px 16px; border:1.5px solid #1a1a1a; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#1a1a1a; letter-spacing:0.4px; text-transform:uppercase;">CV</a>
   <a href="#teaching" style="padding:7px 16px; border:1.5px solid #1a1a1a; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#1a1a1a; letter-spacing:0.4px; text-transform:uppercase;">Teaching</a>
   <a href="https://www.linkedin.com/in/federico-scabbia/" style="padding:7px 16px; border:1.5px solid #1a1a1a; border-radius:3px; text-decoration:none; font-family:'Source Sans Pro', sans-serif; font-size:0.85rem; font-weight:600; color:#1a1a1a; letter-spacing:0.4px; text-transform:uppercase;">LinkedIn</a>
@@ -124,6 +125,27 @@ I use diverse data sources — <strong>satellite imagery</strong>, <strong>large
       Analyzing 10 million news articles with LLMs, we map the anatomy of global conflict coverage, examining how international ties drive bias and shape downstream economic outcomes.
     </div>
   </details>
+</div>
+
+</div>
+
+<!-- ═══════════════════ GRANTS & AWARDS ═══════════════════ -->
+
+<div id="grants" style="margin-bottom:44px;">
+
+<div style="display:flex; align-items:center; gap:14px; margin-bottom:28px;">
+  <h2 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.65rem; font-weight:700; color:#1a1a1a; white-space:nowrap; margin:0;">Grants &amp; Awards</h2>
+  <div style="flex:1; height:1px; background:linear-gradient(to right, #1a1a1a, transparent);"></div>
+</div>
+
+<div style="margin-bottom:24px; padding:20px 24px; border-left:3px solid #8b2500; background:linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%); border-radius:0 4px 4px 0;">
+  <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.2rem; font-weight:700; color:#1a1a1a; margin:0 0 4px 0;">
+    ReCIPE PhD Research Grant
+  </h3>
+  <div style="font-size:0.88rem; color:#777; margin-bottom:10px;">Centre for Economic Policy Research (CEPR) · 2026</div>
+  <div style="font-size:0.93rem; line-height:1.75; color:#3a3a3a;">
+    Competitive research grant of £15,000 awarded to support <em>&ldquo;The New Scramble for Africa: The Case of Illegal Fishing,&rdquo;</em> a project studying the effects of illegal overfishing on local communities in Africa.
+  </div>
 </div>
 
 </div>
